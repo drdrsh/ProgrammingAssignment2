@@ -17,7 +17,7 @@ e <- c(240,22,59)
 f <- c(78,33,39)
 
 # Create our matrix
-m1 <- MakeCacheMatrix(rbind(a,b,c))
+m1 <- makeCacheMatrix(rbind(a,b,c))
 message("Original Matrix")
 print(m1$Get())
 

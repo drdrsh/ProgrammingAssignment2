@@ -16,7 +16,7 @@
 #  2) This file uses, to the best of my ability, Google's R Style guide
 #   http://google-styleguide.googlecode.com/svn/trunk/Rguide.xml 
 
-MakeCacheMatrix <- function(x=matrix()) {
+makeCacheMatrix <- function(x=matrix()) {
   # Creates a matrix object that supports inverse matrix calculation and caching 
   #
   # Args:
@@ -104,4 +104,16 @@ MakeCacheMatrix <- function(x=matrix()) {
     GetInverse = GetInverse
   )
   
+}
+
+cacheSolve <- function(x){
+  #	This function is here to comply with the assignment requirements, it merely wraps around GetInverse() function
+  #
+  # Args:
+  #	x: A matrix object created with makeCacheMatrix
+  #
+  # Returns:
+  #	the inverse matrix x 
+  
+  x$GetInverse()
 }
